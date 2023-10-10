@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*CONTAINER====================*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*HEADER=======================*/
+header {
+    padding: 20px 10px;
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.container ul  li  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.08em;
+}
+.container ul  li  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*MAIN==========================*/
+.conteudo img {
+    height: 350px;
+}
+
+.conteudo{
+    margin-top: 20px;
+    display: flex;
+}
+/*.ABOUT-STORE=========================*/
+.about-store { 
+    margin-left: 30px;
+}
+
+.about-store h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.about-store p {
+    font-size: 1.3em;
+}
+/*SECTION==============================*/
+.produtos {
+    margin-top: 30px;
+}
+
+.roupas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos h2 {
+    border-bottom: 1px solid black;
+}
+
+.peca img {
+    height: 170px;
+}
+
+.peca p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.13em;
+    margin-bottom: 30px;
+}
+
+.peca a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 8px;
+    margin-left: 30px;
+}
+
+.peca a:hover {
+    background-color: rgba(0, 0, 255, 0.59);
+}
+/*MEDIA QUERY============================*/
+@media screen and (max-width: 767px){
+    header {
+        margin-bottom: 40px;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .container ul li {
+        display: inline;
+    }
+
+    .container ul {
+        margin-top: 30px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .conteudo img {
+        height: 220px;
+        margin-left: 1%;
+        margin-bottom: 30px;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .about-store { 
+        margin-left: 0px;
+    }
+
+    .produtos {
+        margin-top: 30px;
+    }
+
+    .roupas {
+        display: block;
+        text-align: center;
+    }
+
+    .peca {
+        margin-top: 40px;
+    }
+
+    /*.peca img {
+        height: 200px;
+    }*/
+
+    .peca a {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .conteudo img {
+        margin-left: 16%;
+        margin-bottom: 30px;
+    }
+
+    .peca img {
+        height: 250px;
+    }
+
+    .roupas {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .peca {
+        margin-top: 30px;
+    }
+
+    .peca p {
+        margin-left: 15%;
+    }
+
+    .peca a {
+        margin-left: 20%;
+    }
+}
